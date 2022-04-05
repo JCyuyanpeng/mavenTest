@@ -13,4 +13,31 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <suiteXmlFiles>
+                        <!--<! &#45;&#45; testng.xml所在的路径，这里指的是相对路径 &#45;&#45; !>-->
+                        <!--                    <suiteXmlFile>src/suite/${suite.filepath}</suiteXmlFile>-->
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+                <version>2.22.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
+
+

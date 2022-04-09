@@ -1,6 +1,5 @@
 # mavenTest
-<<<<<<< HEAD
+# maven-04
 # test/release/1.0
-=======
 # test/release/2.0
->>>>>>> feature/maven-02
+
